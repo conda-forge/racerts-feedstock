@@ -1,13 +1,13 @@
 {% set name = "racerts" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/racerts-{{ version }}.tar.gz
-  sha256: 200e7fc2e6f7e289fd15c986c7093c0e6ed908648cbf73b2573e5b6956f9c916
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/racerts-{{ version }}.tar.gz
+  sha256: 67168d953d12dc266e2e725bccde2a510ed32cec947a997d03ffe350389acd45
 
 build:
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - rdkit >=2023.9.6
     - numpy >=1.26.4
     - py3Dmol >=2.0.0
-    - ipython >=8.18.1
+    - ipython >=7.34.0
 
 test:
   imports:
