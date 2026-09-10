@@ -26,7 +26,7 @@ requirements:
     - rdkit >=2023.9.6
     - numpy >=1.26.4
     - py3Dmol >=2.0.0
-    - ipython >=8.18.1
+    - ipython >=7.34.0
 
 test:
   imports:
